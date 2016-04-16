@@ -1,0 +1,80 @@
+<div class="kickstarter-container container event-details">
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <a href="#/events" class="back">‹ Back</a>
+            <h2>{{selectedEvent.name}}</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-9 col-md-9">
+
+            <div class="main">
+                <div class="description" ng-bind-html="selectedEvent.shortDescription"></div>
+                <div class="description" ng-bind-html="selectedEvent.longDescription"></div>
+            </div>
+
+            <div class="top clearfix">
+                <div class="speakers">
+                    <h4>Speakers</h4>
+                    <span>
+                        {{selectedEvent.speakers}}
+                    </span>
+                </div>
+                <div class="topics">
+                    <h4>Topics</h4>
+                    <span>
+                        {{selectedEvent.topics}}
+                    </span>
+                </div>
+            </div>
+
+            <div class="bottom clearfix">
+
+                <div class="location">
+                    <h4>Location</h4>
+                    <div class="address" ng-bind-html="selectedEvent.location"></div>
+                </div>
+
+                <div class="date">
+                    <h4>Date</h4>
+                    <div>
+                        <span class="day">{{selectedEvent.date | date : 'dd'}}</span>
+                        <span class="month">{{selectedEvent.date | date : 'MMM'}}</span>
+                        <span class="year">{{selectedEvent.date | date : 'yyyy'}}</span>
+                        <span class="hour">{{selectedEvent.date | date : 'HH:mm'}}</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3">
+            <img ng-if="selectedEvent.picture" ng-src="images/{{selectedEvent.picture}}" alt="" class="event-picture">
+
+            <div class="box pdf clearfix">
+                <h4>PDF</h4>
+                <ul class="clearfix">
+                    <li>
+                        <a ng-href="{{selectedEvent.pdf.url}}">
+                            <span class="icon"></span>
+                            {{selectedEvent.pdf.name}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box clearfix">
+                <h4>Links</h4>
+                <ul class="clearfix">
+                    <li ng-repeat="link in selectedEvent.links">
+                        <a ng-href="{{link.url}}">
+                            <span class="icon"></span>
+                            {{link.name}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

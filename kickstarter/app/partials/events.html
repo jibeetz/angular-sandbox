@@ -1,0 +1,42 @@
+<div class="kickstarter-container container events">
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <h2>Events</h2>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <ul class="events-list">
+            <li ng-repeat="event in events" class="clearfix">
+                <a href="#/events/{{event.id}}/{{event.url}}" class="clearfix">
+                    <div class="col-sm-3 col-md-3 picture">
+                        <img ng-if="event.picture" ng-src="images/{{event.picture}}" alt="" class="">
+                    </div>
+
+                    <div class="col-sm-7 col-md-7 main">
+                        <div class="name">{{event.name}}</div>
+                        <div class="location">{{event.location}}</div>
+                        <div class="speakers"><strong>Speakers:</strong> {{event.speakers}}</div>
+                        <div class="description">{{event.shortDescription}}</div>
+                        <div class="bottom clearfix">
+                            <div class="topics"><strong>Topics:</strong> {{event.topics}}</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2 col-md-2 meta">
+                        <div class="date">
+                            <span class="day">{{event.date | date : 'dd'}}</span>
+                            <span class="month">{{event.date | date : 'MMM'}}</span>
+                            <span class="year">{{event.date | date : 'yyyy'}}</span>
+                            <span class="hour">{{event.date | date : 'HH:mm'}}</span>
+                        </div>
+
+                        <!-- <div class="languages"><span ng-repeat="language in event.languages"><img ng-src="{{language.code}}.png" alt=""></span></div> -->
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

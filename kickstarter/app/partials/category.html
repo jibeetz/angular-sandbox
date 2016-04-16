@@ -1,0 +1,89 @@
+<div class="kickstarter-container container">
+
+    <div class="row">
+
+        <div class="col-sm-12 col-md-12">
+
+            <ul class="categories-menu clearfix">
+                <li ng-repeat="category in categories" class="{{category.slug}}">
+                    <a href="">{{category.name}}</a>
+                    <style>.categories-menu li.{{category.slug}} a{border-bottom-color: #{{category.color}};}</style>
+                    <ul class="subcategories-menu">
+                        <li ng-repeat="subcategory in category.subcategories" ng-class="{'selected': subcategory.selected}">
+                            <a href="" ng-click="filterSubcategory(subcategory)">{{subcategory.name}}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="selected-subcategories">
+                <li ng-repeat="selectedSubcategory in selectedSubcategories">
+                    <a href="" ng-click="unselectSubcategory(selectedSubcategory)">
+                        <span></span>
+                        {{selectedSubcategory.name}}
+                    </a>
+                </li>
+                <li ng-show="selectedSubcategories.length > 1">
+                    <a href="" ng-click="resetSubcategoriesFilters()" class="remove-all-filters">
+                        <span></span>
+                        Remove All
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <h2>Title</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div ng-repeat="article in (filteredArticles = (articles | filter : subcategoriesFilter))" class="article-container" ng-class="articleSize(article.width)" articles-init>
+
+            <div class="article {{article.category.slug}} article-type-{{article.type}}" ng-class="{'article-with-url': article.url}" ng-switch on="article.type">
+                <div ng-switch-when="image">
+                    <img ng-src="images/{{article.image}}">
+                </div>
+                <div ng-switch-when="video-brightcove">
+                    <div class="video-brightcove" video-id="{{article.videoPlayerID}}" object-id="{{article.objectID}}"></div>
+                </div>
+                <div ng-switch-when="text-title">
+                    <h3>{{article.headline}}</h3>
+                    <div ng-bind-html="article.text"></div>
+
+                    <a ng-href="{{article.url}}" ng-if="article.url" class="fancy-link">Link</a>
+                </div>
+                <div ng-switch-when="big-text-no-title">
+                    <h4 ng-bind-html="article.text"></h4>
+                </div>
+
+                <ul ng-if="article.url"Y
+                 class="social clearfix">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{article.url}}" target="_blank">
+                            <img src="assets/facebook.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{article.url}}&amp;title={{article.name}}" target="_blank">
+                            <img src="assets/linkedin.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/intent/tweet?text={{article.name}} - {{article.url}}" target="_blank">
+                            <img src="assets/twitter.png" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <style>.article.{{article.category.slug}} {border-bottom-color: #{{article.category.color}};}</style>
+        </div>
+
+        <div class="col-sm-12 col-md-12 no-articles" ng-show="filteredArticles.length === 0">No articles for the current filters. <a href="" ng-click="resetSubcategoriesFilters()">Reset filters</a></div>
+    </div>
+
+</div>

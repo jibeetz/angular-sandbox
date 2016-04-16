@@ -1,0 +1,53 @@
+[
+	{
+		"name" : "Live Forum",
+		"id" : 1,
+		"date" : "2016-03-16T22:00:00Z",
+		"picture" : "gogh.jpg",
+		"url" : "live-forum",
+		"location" : "Bahnhofstrasse Zurich, Switzerland",
+		"shortDescription" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras rhoncus sapien pellentesque facilisis luctus. In bibendum varius vestibulum. Donec nisi mi, posuere ut urna nec, vehicula sodales quam. Curabitur euismod ligula urna, vel tincidunt odio vulputate ut. Suspendisse potenti.",
+		"topics" : "Social",
+		"speakers" : "Speaker 1, Speaker 2",
+		"links" : [
+			{
+				"name" : "Link name",
+				"url" : "http://link1"
+			},
+			{
+				"name" : "Link name 2",
+				"url" : "http://link2"
+			}
+		],
+		"pdf" : {
+			"name" : "PDF name",
+			"url" : "http://pdf"
+		}
+	},
+	{
+		"name" : "Live Chat",
+		"id" : 2,
+		"date" : "2016-01-23T19:00:00Z",
+		"picture" : "kajak_blue.jpg",
+		"url" : "live-chat",
+		"location" : "Rue du Rhône, Geneva, Switzerland",
+		"shortDescription" : "Quisque eu dictum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras rhoncus sapien pellentesque facilisis luctus.",
+		"longDescription" : "Quisque eu dictum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras rhoncus sapien pellentesque facilisis luctus.",
+		"topics" : "Economy, Environment",
+		"speakers" : "Speaker 1, Speaker 2",
+		"links" : [
+			{
+				"name" : "Link name",
+				"url" : "http://link1"
+			},
+			{
+				"name" : "Link name 2",
+				"url" : "http://link2"
+			}
+		],
+		"pdf" : {
+			"name" : "PDF name",
+			"url" : "http://pdf"
+		}
+	}
+]

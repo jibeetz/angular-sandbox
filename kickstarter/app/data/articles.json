@@ -1,0 +1,93 @@
+[
+		{
+		"type" : "text-title",
+		"name" : "Text with title",
+		"id" : 2,
+		"width" : 2,
+		"headline" : "Highlights of the debate",
+		"url" : "http://www.article.url",
+		"text" : "Quisque eu dictum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras rhoncus sapien pellentesque facilisis luctus.",
+		"longDescription" : "Quisque eu dictum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras rhoncus sapien pellentesque facilisis luctus. In bibendum varius vestibulum. Donec nisi mi, posuere ut urna nec, vehicula sodales quam. ligula eu, volutpat augue.",
+		"categoriesIDs" : [1],
+		"subcategories" : [1, 4, 5]
+	},
+	{
+		"type" : "image",
+		"name" : "Image",
+		"id" : 4,
+		"width" : 1,
+		"image" : "image-1.jpg",
+		"categoriesIDs" : [2],
+		"subcategories" : [2, 4, 6, 7],
+		"url" : "http://www.article.url"
+	},
+	{
+		"type" : "big-text-no-title",
+		"name" : "Big Text without title",
+		"id" : 3,
+		"width" : 1,
+		"text" : "Quisque eu dictum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras rhoncus sapien pellentesque facilisis luctus.",
+		"longDescription" : "Quisque eu dictum sapien. Curabitur euismod ligula urna, vel tincidunt odio vulputate ut. Suspendisse potenti. Vestibulum egestas dignissim orci vitae dapibus. Integer lobortis odio leo, nec pellentesque dui porttitor in. Cras ac sapien interdum, accumsan ligula eu, volutpat augue.",
+		"categoriesIDs" : [2],
+		"subcategories" : [1, 4, 6, 7]
+	},
+	{
+		"type" : "text-title",
+		"name" : "Text Forum",
+		"id" : 2,
+		"width" : 2,
+		"headline" : "Digital villainy: A cyber crimewave is sweeping the globe",
+		"text" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras rhoncus sapien pellentesque facilisis luctus. In bibendum varius vestibulum. Donec nisi mi, posuere ut urna nec, vehicula sodales quam. Curabitur euismod ligula urna, vel tincidunt odio vulputate ut. Suspendisse potenti. Vestibulum egestas dignissim orci vitae dapibus. Integer lobortis odio leo, nec pellentesque dui porttitor in. Cras ac sapien interdum, accumsan ligula eu, volutpat augue.",
+		"categoriesIDs" : [4],
+		"subcategories" : [3, 4],
+		"url" : "http://www.article.url"
+	},
+	{
+		"type" : "image",
+		"name" : "Image",
+		"id" : 4,
+		"width" : 1,
+		"image" : "image-1.jpg",
+		"categoriesIDs" : [2],
+		"subcategories" : [2, 4, 6, 7]
+	},
+	{
+		"type" : "image",
+		"name" : "Image",
+		"id" : 4,
+		"width" : 1,
+		"image" : "image-3.jpg",
+		"categoriesIDs" : [4],
+		"subcategories" : [5, 6]
+	},
+	{
+		"type" : "image",
+		"name" : "Image",
+		"id" : 4,
+		"width" : 1,
+		"image" : "image-2.jpg",
+		"categoriesIDs" : [2],
+		"subcategories" : [2, 4, 6, 7]
+	},
+	{
+		"type" : "video-brightcove",
+		"name" : "Brightcove Video",
+		"id" : 1,
+		"width" : 2,
+		"objectID" : "myExperience4483656276001",
+		"videoPlayerID" : "4483656276001",
+		"categoriesIDs" : [1],
+		"subcategories" : [1, 2, 3],
+		"url" : "http://www.article.url"
+	},
+	{
+		"type" : "big-text-no-title",
+		"name" : "Big Text without title Asset",
+		"id" : 3,
+		"width" : 1,
+		"text" : "Quisque eu dictum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras rhoncus sapien pellentesque facilisis luctus.",
+		"longDescription" : "Quisque eu dictum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Vestibulum egestas dignissim orci vitae dapibus. Integer lobortis odio leo, nec pellentesque dui porttitor in. Cras ac sapien interdum, accumsan ligula eu, volutpat augue.",
+		"categoriesIDs" : [4],
+		"subcategories" : [2, 3]
+	}
+]

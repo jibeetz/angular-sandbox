@@ -1,0 +1,127 @@
+[
+    {
+        "name" : "The environmental crisis",
+        "id" : 1,
+        "slug" : "environmental-crisis"
+    },
+    {
+        "name" : "Globalisation 2.0",
+        "id" : 2,
+        "slug" : "globalisation-20"
+    },
+    {
+        "name" : "Social media",
+        "id" : 3,
+        "slug" : "social-media"
+    },
+    {
+        "name" : "Communities",
+        "id" : 4,
+        "slug" : "communities"
+    },
+    {
+        "name" : "Philanthropy",
+        "id" : 5,
+        "slug" : "philanthropy"
+    },
+    {
+        "name" : "Inequality",
+        "id" : 6,
+        "slug" : "inequality"
+    },
+    {
+        "name" : "Care",
+        "id" : 7,
+        "slug" : "care"
+    },
+    {
+        "name" : "Health",
+        "id" : 8,
+        "slug" : "health"
+    },
+    {
+        "name" : "Demographic Shift",
+        "id" : 9,
+        "slug" : "demographic-shift"
+    },
+    {
+        "name" : "Individualism",
+        "id" : 10,
+        "slug" : "individualism"
+    },
+    {
+        "name" : "Workforce of the future",
+        "id" : 11,
+        "slug" : "workforce-future"
+    },
+    {
+        "name" : "Digitalisation",
+        "id" : 12,
+        "slug" : "digitalisation"
+    },
+    {
+        "name" : "Virtual reality",
+        "id" : 13,
+        "slug" : "virtual-reality"
+    },
+    {
+        "name" : "Augmented reality",
+        "id" : 14,
+        "slug" : "augmented-reality"
+    },
+    {
+        "name" : "Technological Convergence",
+        "id" : 15,
+        "slug" : "technological-convergence"
+    },
+    {
+        "name" : "Manufacturing",
+        "id" : 16,
+        "slug" : "manufacturing"
+    },
+    {
+        "name" : "Art",
+        "id" : 17,
+        "slug" : "art"
+    },
+    {
+        "name" : "Culture",
+        "id" : 18,
+        "slug" : "culture"
+    },
+    {
+        "name" : "History",
+        "id" : 19,
+        "slug" : "history"
+    },
+    {
+        "name" : "Sport",
+        "id" : 20,
+        "slug" : "sport"
+    },
+    {
+        "name" : "Education",
+        "id" : 21,
+        "slug" : "education"
+    },
+    {
+        "name" : "Geopolitics",
+        "id" : 22,
+        "slug" : "geopolitics"
+    },
+    {
+        "name" : "Energy",
+        "id" : 23,
+        "slug" : "energy"
+    },
+    {
+        "name" : "Cities/Urbanization",
+        "id" : 24,
+        "slug" : "cities-urbanisation"
+    },
+    {
+        "name" : "Infrastructure",
+        "id" : 25,
+        "slug" : "infrastructure"
+    }
+]
