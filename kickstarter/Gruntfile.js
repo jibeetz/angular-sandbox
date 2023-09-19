@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 
   options.jsFiles = {
     "app/js/script.js": [
-      "app/js/vendor/jquery-1.12.1.min.js",
+      "app/js/vendor/jquery-1.12.2.min.js",
       "app/js/vendor/bootstrap.min.js",
       "app/js/vendor/angular.min.js",
       "app/js/vendor/angular-resource.min.js",
